@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Define file path
+file_to_delete="/tmp/betty"
+

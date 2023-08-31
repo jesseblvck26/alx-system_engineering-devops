@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# List files in the current directory in long format
+echo "Listing files in current directory:"
+ls -la
+
+# List files in the parent of the working directory in long format
+parent_directory=$(dirname "$PWD")
+echo "Listing files in parent directory:"
+ls -la "$parent_directory"
+
+# List files in the /boot directory in long format
+echo "Listing files in /boot directory:"
+ls -la /boot
+

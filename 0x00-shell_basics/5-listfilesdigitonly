@@ -1,0 +1,9 @@
+total 16
+drwxr-xr-x 2 root root 150 Aug 30 20:17 .
+drwxr-xr-x 5 root root  80 Aug 30 19:44 ..
+-rwxr-xr-x 1 root root  80 Aug 30 19:48 0-current_working_directory
+-rw-r--r-- 1 root root   0 Aug 30 19:59 1-listit
+-rwxr-xr-x 1 root root  77 Aug 30 20:15 2-bring_me_home
+-rw-r--r-- 1 root root 318 Aug 30 20:10 3-listfiles
+-rw-r--r-- 1 root root 375 Aug 30 20:11 4-listmorefiles
+-rw-r--r-- 1 root root   0 Aug 30 20:17 5-listfilesdigitonly

@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Define file and directory paths
+source_file="/tmp/betty"
+target_directory="/tmp/my_first_directory"
+
+# Check if the source file exists
+if [ -f "$source_file" ]; then
+    # Check if the target directory exists, if not, create it
+    if [ ! -d "$target_directory" ]; then
+        mkdir -p "$target_directory"
+    fi
+
+    # Move the file
+    mv "$source_file" "$target_directory/"
+
+    # Check if the move was successful
+    if [ $? -eq 0 ]; then
+        echo "File 'betty' moved to '$target_directory'"
+    else
+        echo "Failed to move the file"
+    fi
+else
+    echo "Source file 'betty' does not exist"
+fi
+

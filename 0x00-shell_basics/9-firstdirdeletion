@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Define directory path
+directory_to_delete="/tmp/my_first_directory"
+

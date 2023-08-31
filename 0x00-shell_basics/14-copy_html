@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Define paths
+current_dir=$(pwd)
+parent_dir=$(dirname "$current_dir")
+
+# Loop through HTML files in the current directory
+for html_file in *.html; do
+    # Check if the file exists in the parent directory or is newer
+    if [ ! -e "$parent_dir/$html_file" ] || [ "$html_file" -nt "$parent_dir/$html_file" ]; then
+        cp "$html_file" "$parent_dir/"
+        echo "Copied '$html_file' to '$parent_dir/'"
+    else
+        echo "Skipping '$html_file' as it's not newer"
+    fi
+done
+

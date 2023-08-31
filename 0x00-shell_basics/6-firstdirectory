@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Define the directory path
+directory_path="/tmp/my_first_directory"
+
+# Create the directory
+mkdir -p "$directory_path"
+
+# Check if the directory was created successfully
+if [ -d "$directory_path" ]; then
+    echo "Directory 'my_first_directory' created in /tmp/"
+else
+    echo "Failed to create directory"
+fi
+

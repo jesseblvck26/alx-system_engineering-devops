@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Loop through files ending with ~
+for file in *~; do
+    if [ -f "$file" ]; then
+        rm "$file"
+        echo "Deleted '$file'"
+    fi
+done
+

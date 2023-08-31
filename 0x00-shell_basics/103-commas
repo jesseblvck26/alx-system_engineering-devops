@@ -1,0 +1,2 @@
+ls -a1F | grep -v "^\.\.$" | sort -k1,1d -k2,2 | tr '\n' ',' | sed 's/,$/\n/'
+

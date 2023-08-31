@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Change directory to the previous one
+cd "$OLDPWD"
+
